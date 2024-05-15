@@ -54,6 +54,11 @@ Se vuoi analizzare il file `documento.txt`, segui questi passaggi:
 
 Tutta la logica dell'applicazione si trova in `./src/lib.ts`
 
+## TODO
+
+Per garantire l'integrità e la sicurezza del sistema, è necessario implementare una valida validation dei dati utente, un sistema di gestione degli errori e una gestione efficace delle richieste HTTP, sia sul lato client che sul lato server. Inoltre, l'implementazione di un sistema di logging avanzato permetterebbe di tenere traccia delle attività e degli eventi, migliorando la gestione e la risoluzione dei problemi.
+
+
 ## Contributi
 
 Sono benvenuti contributi e suggerimenti! Sentiti libero di aprire issue e pull request.
