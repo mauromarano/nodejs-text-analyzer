@@ -12,7 +12,7 @@ const fastifyStatic = require("@fastify/static");
 
 // Registra il plugin fastify-static
 fastify.register(fastifyStatic, {
-  root: "/workspaces/nodejs-text-analyzer/public", // Percorso in cui si trovano i file statici
+  root: "/app/public", // Percorso in cui si trovano i file statici
   prefix: "/", // URL prefix per accedere ai file statici
 });
 
