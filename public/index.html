@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fastify Static Example</title>
-    <link rel="stylesheet" href="/public/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <h1>Hello, Fastify!!!!</h1>
-    <img src="/public/image.png" alt="Example Image" />
-    <script src="/public/script.js"></script>
+    <div
+      class="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
+      <div
+        class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
+          Analizzatore di Testo
+        </h1>
+        <input
+          type="text"
+          id="textInput"
+          placeholder="Inserisci una path o URL qui..."
+          class="p-2 border rounded w-full mb-4" />
+        <button
+          onclick="analyzeText()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Analizza
+        </button>
+        <div
+          id="results"
+          class="mt-4 p-4 bg-gray-50 dark:bg-gray-700 dark:text-gray-200 text-gray-800 rounded">
+          <!-- Risultati verranno visualizzati qui -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
