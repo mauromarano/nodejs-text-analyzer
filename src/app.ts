@@ -13,14 +13,14 @@ const fastifyStatic = require("@fastify/static");
 // Registra il plugin fastify-static
 fastify.register(fastifyStatic, {
   root: "/workspaces/nodejs-text-analyzer/public", // Percorso in cui si trovano i file statici
-  prefix: "/public/", // URL prefix per accedere ai file statici
+  prefix: "/", // URL prefix per accedere ai file statici
 });
-
 
 // Declare a route
 fastify.post("/api", async function handler(request, reply) {
-  console.log(request.body);
-  return { hello: "world!!!!" };
+  // console.log(request.body);
+  let result = await analyze(request.body as string);
+  return JSON.stringify(result);
 });
 
 async function main() {
