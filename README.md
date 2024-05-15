@@ -16,7 +16,7 @@ Per avviare l'applicazione, segui questi passaggi:
 
 1. **Clonare la repository**
    ```bash
-   https://github.com/mauromarano/nodejs-text-analyzer.git
+   git clone https://github.com/mauromarano/nodejs-text-analyzer.git
    ```
 
 2. **Costruire l'immagine Docker**
