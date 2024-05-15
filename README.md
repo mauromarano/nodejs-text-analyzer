@@ -50,7 +50,9 @@ Se vuoi analizzare il file `documento.txt`, segui questi passaggi:
    /app/data/documento.txt
    ```
 
+## Logica dell'applicazione
 
+Tutta la logica dell'applicazione si trova in `./src/lib.ts`
 
 ## Contributi
 
